@@ -1,0 +1,617 @@
+/*Css reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+      v2.0 | 20110126
+      License: none (public domain)
+   */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Eigen css*/
+
+html {
+  box-sizing: border-box;
+  font-family: "Hind", arial, tahoma;
+  color: rgb(16, 21, 15);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: repeat(6,100vh);*/
+  /*grid-template-areas:
+      "header header header header"
+      "TIG TIG TIG TIG"
+      "artiesten artiesten artiesten artiesten"
+      "edities edities edities edities"
+      "dank dank dank dank"
+      "praktisch praktisch praktisch praktisch";*/
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header header header"
+    "TIG TIG TIG TIG"
+    " praktisch praktisch praktisch praktisch"
+    "artiesten artiesten artiesten artiesten"
+    "dank dank dank dank"
+    "footer footer footer footer";
+}
+
+#header {
+  height: 100vh;
+  grid-area: header;
+  justify-content: space-around;
+  background-color: #e7e7db;
+  font-family: "Hind", tahoma, arial;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "nav" "primary_nav" "figure";
+  -ms-grid-area: header;
+  -ms-grid-template-columns: 1fr;
+  -ms-grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-template-areas: "nav" "primary_nav" "figure";
+}
+
+.TIG {
+  height: 100vh;
+  grid-area: TIG;
+  -ms-grid-area: TIG;
+  background-color: rgb(57, 82, 27);
+}
+
+.artiesten {
+  /*height: 100vh;*/
+  background-color: rgb(47, 65, 25);
+  grid-area: artiesten;
+  -ms-grid-area: artiesten;
+}
+
+.edities {
+  /*height: 100vh;*/
+  grid-area: edities;
+  -ms-grid-area: edities;
+  background-color: rgb(153, 125, 1);
+}
+.praktisch {
+  /*height: 100vh;*/
+  grid-area: praktisch;
+  -ms-grid-area: praktisch;
+  background-color: rgb(153, 125, 1);
+}
+.dank {
+  grid-area: dank;
+  -ms-grid-area: dank;
+}
+
+#figure {
+  grid-area: figure;
+  -ms-grid-area: figure;
+  align-self: center;
+  -ms-grid-align-self: center;
+}
+
+#figure img {
+  width: 100%;
+}
+
+strong {
+  font-weight: bolder;
+  color: rgb(42, 50, 41);
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1.2rem;
+  color: rgb(201, 200, 172);
+}
+.text p {
+  padding-left: 10%;
+}
+
+.text a {
+  /*text-decoration: none;*/
+  color: rgb(33, 91, 116);
+}
+
+.text a:hover {
+  color: rgb(57, 82, 27);
+}
+address {
+  font-style: normal;
+}
+
+/* NAVIGATION */
+
+#nav {
+  grid-area: nav;
+  -ms-grid-area: nav;
+  width: 100%;
+  background: rgb(28, 28, 28);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  /*padding: 1.6rem 0.8rem;*/
+}
+
+h1.logo {
+  font-family: "righteous";
+  color: rgb(201, 200, 172);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  float: left;
+  letter-spacing: 0.2em;
+}
+
+a.to_nav {
+  float: right;
+  color: rgb(201, 200, 172);
+  background: rgb(57, 82, 27);
+  text-decoration: none;
+  padding: 1px 0.8rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+a.to_nav:hover,
+a.to_nav:focus {
+  color: rgb(57, 82, 27);
+  background: rgb(201, 200, 172);
+}
+
+#primary_nav {
+  grid-area: primary_nav;
+  -ms-grid-area: primary_nav;
+  display: none;
+  width: 100%;
+}
+
+#primary_nav:target {
+  display: block;
+}
+
+#primary_nav ul {
+  list-style-type: none;
+  background-color: rgba(16, 21, 15, 0.8);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#primary_nav li a {
+  font-family: "righteous";
+  font-weight: 100;
+  font-size: 0.8rem;
+  height: 4.4rem;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  width: auto;
+  padding: 1.2rem;
+  color: rgb(201, 200, 172);
+}
+
+#primary_nav li a:hover {
+  color: rgb(228, 118, 17);
+}
+
+#primary_nav a.active {
+  color: rgb(228, 118, 17);
+}
+#primary_nav li a.sprite {
+  width: 3rem;
+  margin: 0.8rem 0.3rem 0rem 0.3rem;
+}
+
+#primary_nav a.facebook {
+  background: url("../images/facebook.png") no-repeat;
+  background-size: 80%;
+  transition: background-size 2s;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#primary_nav a.facebook:hover {
+  background-size: 60%;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 4.375rem;
+  z-index: 1;
+}
+
+/*ARTICLE*/
+
+.TIG h2,
+.artiesten h2,
+.edities h2,
+.dank h2,
+.praktisch h2 {
+  color: rgb(201, 200, 172);
+  font-family: "Righteous", tahoma, arial;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+
+  background-color: rgb(57, 82, 27);
+  padding: 1.2rem;
+  margin: 0;
+}
+
+.anchor {
+  display: block;
+  height: 4.4rem;
+  margin-top: -4.4rem;
+  visibility: hidden;
+}
+
+/*ARTICLE TIG*/
+
+.TIG {
+  background: url("../images/IMG_5968.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.articleTIG {
+  background-color: rgba(201, 200, 172, 0.6);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "textTIG";
+  display: -ms-grid;
+  -ms-grid-template-columns: 1fr;
+  -ms-grid-template-rows: auto;
+  -ms-grid-template-areas: "textTIG";
+  align-items: start;
+  -ms-grid-align-items: start;
+}
+
+.TIGT {
+  color: rgb(16, 21, 15);
+  grid-area: textTIG;
+  -ms-grid-area: textTIG;
+  background-image: url("../images/mierenBeneden.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+/*articlePRAKTISCH*/
+
+.praktischT p {
+  padding-left: 15%;
+}
+.praktischT h3 {
+  color: rgb(42, 50, 41);
+}
+.praktischT address {
+  padding-left: 15%;
+}
+.praktischT ul {
+  padding-left: 15%;
+}
+
+.praktischT img {
+  height: 4rem;
+  transition: height 2s;
+  display: inline-block;
+}
+.praktischT img:hover {
+  height: 3rem;
+}
+/*articleArtiesten*/
+.artiesten img {
+  padding: 2rem;
+}
+/*articleDANK*/
+.dank {
+  background: url("../images/IMG_5951.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h3 {
+  padding-left: 10%;
+  font-weight: normal;
+}
+.articleDank {
+  background-color: rgba(201, 200, 172, 0.6);
+  height: 100%;
+  padding: 0;
+}
+.dankje {
+  margin-top: 0;
+  color: rgb(16, 21, 15);
+}
+.dankje ul {
+  padding-left: 15%;
+}
+.dankje li {
+  font-size: 1.2rem;
+}
+.dankje img {
+  width: 10rem;
+  padding-left: 5%;
+}
+
+/*FOOTER*/
+footer {
+  color: rgb(201, 200, 172);
+  margin: 0;
+  grid-area: footer;
+  -ms-grid-area: footer;
+  background-color: rgb(153, 125, 1);
+  font-size: 1rem;
+}
+footer h3 {
+  font-size: 1.3rem;
+  padding-left: 15%;
+}
+.sponsors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "S1  S2" "S3  S4";
+  grid-gap: 10px;
+  /*display: -ms-grid;
+   -ms-grid-template-columns: 1fr 1fr;
+   -ms-grid-template-rows: 1fr 1fr;
+   -ms-grid-template-areas: "S1  S2" "S3  S4";
+   -ms-grid-gap: 10px;
+   font-size: 0.8rem;*/
+}
+footer h3 {
+  font-size: 1.3rem;
+}
+.S1 {
+  grid-area: S1;
+  -ms-rid-area: S1;
+  text-align: center;
+}
+
+.S2 {
+  grid-area: S2;
+  -ms-grid-area: S2;
+  text-align: center;
+}
+
+.S3 {
+  grid-area: S3;
+  -ms-grid-area: S3;
+  text-align: center;
+}
+
+.S4 {
+  grid-area: S4;
+  -ms-grid-area: S4;
+  text-align: center;
+}
+
+.sponsors img {
+  width: 60%;
+}
+
+@media screen and (min-width: 760px) {
+  #nav {
+    display: none;
+  }
+  #primary_nav {
+    display: block;
+  }
+  #primary_nav {
+    background: rgb(28, 28, 28);
+  }
+  #primary_nav ul {
+    height: 4.4rem;
+  }
+  #primary_nav ul li {
+    display: inline-block;
+  }
+  #primary_nav ul li a {
+    font-size: 0.8rem;
+  }
+  .fixed2 {
+    position: fixed;
+    top: 0;
+    height: 4.375rem;
+    z-index: 1;
+  }
+  .text {
+    padding: 2rem 10rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #primary_nav ul li a {
+    font-size: 1rem;
+    width: 10rem;
+  }
+  .articleTIG {
+    display: grid;
+    grid-template-columns: 8rem 1fr 8rem;
+    grid-template-rows: auto;
+    grid-template-areas: ". textTIG .";
+    align-items: center;
+  }
+  .text {
+    padding: 2rem 8rem;
+    font-size: 1.2rem;
+  }
+
+  .TIGT {
+    background-position: 50% 50%;
+  }
+
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "S1  S2 S3  S4";
+    grid-gap: 1rem;
+    align-items: start;
+    justify-content: center;
+  }
+}
