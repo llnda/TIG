@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "responsive grid website",
   "main": "index.js",
+  "homepage": "https://llnda.github.io/tig",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "author": "Linda Aerts",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
