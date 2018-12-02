@@ -1,0 +1,11 @@
+{
+  "name": "tig",
+  "version": "1.0.0",
+  "description": "responsive grid website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Linda Aerts",
+  "license": "MIT"
+}
