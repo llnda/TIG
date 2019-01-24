@@ -1,15 +1,19 @@
 {
   "name": "tig",
   "version": "1.0.0",
-  "description": "responsive grid website",
+  "description": "grid website onepager",
   "main": "index.js",
-  "homepage": "https://llnda.github.io/tig",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Linda Aerts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llnda/TIG.git"
+  },
+  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  "bugs": {
+    "url": "https://github.com/llnda/TIG/issues"
+  },
+  "homepage": "https://github.com/llnda/TIG#readme"
 }
