@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/llnda/TIG/issues"
   },
-  "homepage": "https://github.com/llnda/TIG#readme"
+  "homepage": "https://github.com/llnda/TIG#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
